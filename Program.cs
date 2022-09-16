@@ -1,14 +1,11 @@
 ﻿string[] FindItems(string[] arrayUser)
 {
     string[] newArray = new string[0];
-    // int counter = 0;
     for (int i = 0; i < arrayUser.Length; i++)
     {
         if (arrayUser[i].Length <= 3)
         {
             newArray = newArray.Concat(new string[] {arrayUser[i]}).ToArray();
-            // newArray[counter] = arrayUser[i];
-            // counter++;
         }
     }
     return newArray;
